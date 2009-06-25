@@ -1,0 +1,63 @@
+# Date and Calendar
+ 
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+ 
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+ 
+# fiddle with window
+use_spacer right
+
+# Use Xft?
+use_xft yes
+xftfont unDotum:size=8
+xftalpha 0.8
+text_buffer_size 2048
+ 
+# Update interval in seconds
+update_interval 10
+ 
+# Minimum size of text are
+minimum_size 5 5
+maximum_width 600
+
+# Draw shades?
+draw_shades no
+ 
+# Text stuff
+draw_outline no # amplifies text if yes
+draw_borders no
+uppercase no # set to yes if you want all text to be in uppercase
+ 
+# Stippled borders?
+stippled_borders 3
+ 
+# border margins
+border_margin 9
+ 
+# border width
+border_width 10
+ 
+# Default colors 
+default_color white
+  
+# Text alignment, other possible values are commented
+alignment top_left
+
+# Gap between borders of screen
+#gap_x 787
+gap_y 580
+
+#${alignr 320}${font Santos Dumont:size=40}${color 689098}${execi 3600 date +%A\ %B\ %d\ %Y}$font
+ 
+# stuff after 'TEXT' will be formatted on screen
+
+TEXT
+${color #fbc109}${font A bite:size=24}CALENDAR  $font
+${voffset -13}${color 898989}${hr 2}
+
+${font UnDotum:size=10}$color${exec cal -3}

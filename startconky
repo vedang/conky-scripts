@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Stats Bar
+conky -d -c /home/vedang/Source/scripts/conkyrc-stats &
+
+# To Do
+# To ensure To Do does not cover Stats
+sleep 2 && conky -d -c /home/vedang/Source/scripts/conkyrc-todo &
+
+# Music
+conky -d -c /home/vedang/Source/scripts/conkyrc-mpd &
+
+# Time
+sleep 1 && conky -d -c /home/vedang/Source/scripts/conkyrc-time &
+
+# Date and Calendar
+conky -d -c /home/vedang/Source/scripts/conkyrc-cal &
+exit

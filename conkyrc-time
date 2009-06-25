@@ -1,0 +1,66 @@
+# Time
+
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+ 
+# fiddle with window
+use_spacer right
+
+# Use Xft?
+use_xft yes
+xftfont unDotum:size=8
+xftalpha 0.8
+text_buffer_size 2048
+ 
+# Update interval in seconds
+update_interval 5
+ 
+# Minimum size of text area
+minimum_size 5 5
+maximum_width 600
+
+# Draw shades?
+draw_shades no
+ 
+# Text stuff
+draw_outline no # amplifies text if yes
+draw_borders no
+uppercase no # set to yes if you want all text to be in uppercase
+ 
+# Stippled borders?
+stippled_borders 3
+ 
+# border margins
+border_margin 9
+ 
+# border width
+border_width 10
+ 
+# Default colors 
+#default_color 0a415d
+default_color CA2202
+  
+# Text alignment, other possible values are commented
+alignment top_left
+
+# Gap between borders of screen
+#gap_x 231
+#gap_y 100
+
+#${color fc979d}${hr 2}
+#${voffset -240}${font Santos Dumont:size=200}${color 79cbd6}${execi 15 date +%R}$font
+#${offset 465}$color${voffset 3}${font A bite:size=24}TIME $font
+
+# stuff after 'TEXT' will be formatted on screen
+
+# Spaces are necessary for layout!
+TEXT
+${color}${font Radio Space:size=14}${time %A %d %Y}
+      ${font Radio Space:size=55}${time %H:%M}
+

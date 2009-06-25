@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Sleep to load compiz
+sleep 15
+
+#run the various conky scripts
+bash /home/vedang/Source/scripts/startconky
