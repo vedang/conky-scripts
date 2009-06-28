@@ -50,12 +50,8 @@ default_color CA2202
 alignment top_left
 
 # Gap between borders of screen
-#gap_x 231
-#gap_y 100
-
-#${color fc979d}${hr 2}
-#${voffset -240}${font Santos Dumont:size=200}${color 79cbd6}${execi 15 date +%R}$font
-#${offset 465}$color${voffset 3}${font A bite:size=24}TIME $font
+#gap_x
+#gap_y
 
 # stuff after 'TEXT' will be formatted on screen
 

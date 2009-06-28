@@ -49,11 +49,9 @@ default_color white
 alignment top_left
 
 # Gap between borders of screen
-#gap_x 787
+#gap_x 
 gap_y 580
 
-#${alignr 320}${font Santos Dumont:size=40}${color 689098}${execi 3600 date +%A\ %B\ %d\ %Y}$font
- 
 # stuff after 'TEXT' will be formatted on screen
 
 TEXT

@@ -8,11 +8,12 @@ conky -d -c /home/vedang/Source/scripts/conkyrc-stats &
 sleep 2 && conky -d -c /home/vedang/Source/scripts/conkyrc-todo &
 
 # Music
-conky -d -c /home/vedang/Source/scripts/conkyrc-mpd &
+# To ensure that Music does not cover Calendar
+sleep 2 && conky -d -c /home/vedang/Source/scripts/conkyrc-mpd &
 
 # Time
 sleep 1 && conky -d -c /home/vedang/Source/scripts/conkyrc-time &
 
-# Date and Calendar
+# Calendar
 conky -d -c /home/vedang/Source/scripts/conkyrc-cal &
 exit

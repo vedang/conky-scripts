@@ -50,8 +50,8 @@ default_color white
 alignment top_right
  
 # Gap between borders of screen
-#gap_x 1420
-#gap_y 17
+#gap_x 
+#gap_y 
 
 
 # Possible variables to be used:
