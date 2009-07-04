@@ -12,6 +12,6 @@ conky -d -c /home/vedang/Source/scripts/conkyrc-stats-left &
 ## Todo
 ## Music
 ## Twitter
-sleep 1 && conky -d -c /home/vedang/Source/scripts/conkyrc-stats-right &
+conky -d -c /home/vedang/Source/scripts/conkyrc-stats-right &
 
 exit
