@@ -1,19 +1,17 @@
 #!/bin/bash
 
-# Stats Bar
-conky -d -c /home/vedang/Source/scripts/conkyrc-stats &
+# Left Stats Bar
+## System
+## Processor
+## Memory and Disks
+## Network Info
+conky -d -c /home/vedang/Source/scripts/conkyrc-stats-left &
 
-# To Do
-# To ensure To Do does not cover Stats
-sleep 2 && conky -d -c /home/vedang/Source/scripts/conkyrc-todo &
+# Right Stats Bar
+## Time
+## Todo
+## Music
+## Calendar
+sleep 1 && conky -d -c /home/vedang/Source/scripts/conkyrc-stats-right &
 
-# Music
-# To ensure that Music does not cover Calendar
-sleep 2 && conky -d -c /home/vedang/Source/scripts/conkyrc-mpd &
-
-# Time
-sleep 1 && conky -d -c /home/vedang/Source/scripts/conkyrc-time &
-
-# Calendar
-conky -d -c /home/vedang/Source/scripts/conkyrc-cal &
 exit
