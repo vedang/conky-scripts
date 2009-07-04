@@ -1,4 +1,4 @@
-# Time
+# Stats Right
 
 # Create own window instead of using desktop (required in nautilus)
 own_window yes
@@ -16,7 +16,7 @@ use_spacer right
 use_xft yes
 xftfont unDotum:size=10
 xftalpha 0.8
-text_buffer_size 2048
+text_buffer_size 10000
  
 # Update interval in seconds
 update_interval 5
@@ -43,7 +43,6 @@ border_margin 9
 border_width 10
  
 # Default colors 
-#default_color 0a415d
 default_color white
   
 # Text alignment, other possible values are commented
@@ -59,9 +58,10 @@ alignment top_left
 # Time
 # Todo
 # Music
-# Calendar
+# Twitter
 
 # Spaces are necessary for layout!
+
 TEXT
 ${color CA2202}${font Radio Space:size=14}${time %A %d %Y}
       ${font Radio Space:size=55}${time %H:%M}${color #689098}
@@ -79,6 +79,6 @@ ${alignc}$mpd_status ${mpd_elapsed}/${mpd_length}
 ${alignc}Random:${mpd_random} Repeat:${mpd_repeat}
 ${else}${alignc}(music daemon not running)${endif}
 
-${color #fbc109}${font A bite:size=24}CALENDAR  $font
-${voffset -45}${color 898989}${hr 2}
-$color${exec cal -3}
+${voffset -5}${color #fbc109}${font A bite:size=24}TWITTER
+${voffset -45}${hr 2}$font$color
+${execi 60 python ~/Source/scripts/ctwitter.py | fold -w45}
