@@ -4,4 +4,4 @@
 sleep 15
 
 #run the various conky scripts
-bash /home/vedang/Source/scripts/startconky
+bash /home/vedang/Source/scripts/conky/startconky

@@ -8,7 +8,7 @@ own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 
 # Use double buffering (reduces flicker, may not work for everyone)
 double_buffer yes
- 
+
 # fiddle with window
 use_spacer right
 
@@ -17,34 +17,34 @@ use_xft yes
 xftfont unDotum:size=10
 xftalpha 0.8
 text_buffer_size 10000
- 
+
 # Update interval in seconds
 update_interval 5
- 
+
 # Minimum size of text area
 minimum_size 5 5
 maximum_width 300
 
 # Draw shades?
 draw_shades no
- 
+
 # Text stuff
 draw_outline no # amplifies text if yes
 draw_borders no
 uppercase no # set to yes if you want all text to be in uppercase
- 
+
 # Stippled borders?
 stippled_borders 3
- 
+
 # border margins
 border_margin 9
- 
+
 # border width
 border_width 10
- 
-# Default colors 
+
+# Default colors
 default_color white
-  
+
 # Text alignment, other possible values are commented
 alignment top_left
 
@@ -81,4 +81,4 @@ ${else}${alignc}(music daemon not running)${endif}
 
 ${voffset -5}${color #fbc109}${font A bite:size=24}TWITTER
 ${voffset -45}${hr 2}$font$color
-${execi 60 python ~/Source/scripts/ctwitter.py | fold -w45}
+${execi 60 python ~/Source/scripts/conky/ctwitter.py | fold -w45}

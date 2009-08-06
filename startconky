@@ -5,13 +5,13 @@
 ## Processor
 ## Memory and Disks
 ## Network Info
-conky -d -c /home/vedang/Source/scripts/conkyrc-stats-left &
+conky -d -c /home/vedang/Source/scripts/conky/conkyrc-stats-left &
 
 # Right Stats Bar
 ## Time
 ## Todo
 ## Music
 ## Twitter
-conky -d -c /home/vedang/Source/scripts/conkyrc-stats-right &
+conky -d -c /home/vedang/Source/scripts/conky/conkyrc-stats-right &
 
 exit
