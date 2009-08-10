@@ -67,7 +67,7 @@ ${color CA2202}${font Radio Space:size=14}${time %A %d %Y}
       ${font Radio Space:size=55}${time %H:%M}${color #689098}
 ${font A bite:size=24}TO DO
 ${voffset -45}${hr 2}$font$color
-${execi 60 cat /home/vedang/Documents/TODO.txt}
+${execi 60 cat /home/vedang/Documents/Notes-GTD/todo}
 
 ${voffset -5}${color #cae186} ${font A bite:size=24}MUSIC
 ${voffset -45}${hr 2}$font $color
